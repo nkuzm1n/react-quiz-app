@@ -51,7 +51,7 @@ export default class Auth extends Component {
         'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyA8dZAI1z5l_RRT6e4gR-b-jxovfWJZ7Ho',
         authData
       )
-      console.log(response.data)
+      console.log('login handler', response.data)
     } catch (e) {
       console.log(e)
     }
@@ -68,7 +68,7 @@ export default class Auth extends Component {
         'https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyA8dZAI1z5l_RRT6e4gR-b-jxovfWJZ7Ho',
         authData
       )
-      console.log(response.data)
+      console.log('register handler', response.data)
     } catch (e) {
       console.log(e)
     }
@@ -147,6 +147,7 @@ export default class Auth extends Component {
 
           <form onSubmit={this.submitHandler} className={classes.AuthForm}>
             {this.renderInputs()}
+
             <Button
               type='success'
               onClick={this.loginHandler}
