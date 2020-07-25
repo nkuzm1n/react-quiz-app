@@ -8,10 +8,6 @@ import QuizCreator from './containers/QuizCreator/QuizCreator'
 import QuizList from './containers/QuizList/QuizList'
 
 class App extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
   render() {
     return (
       <Layout>
