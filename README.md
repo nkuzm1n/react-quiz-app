@@ -2,9 +2,11 @@
 
 Poject was created by `create-react-app`
 
-A simple Quiz appication with authorization, questions list and question creator.
+A simple Quiz appication with questions list, question creator and authorization.
 
 Used: `react-router`, `redux` and `axios` to connect with Firebase to load questions from database.
+
+Project link: https://react-quiz-de27e.web.app/
 
 ## Available Scripts
 
